@@ -12,7 +12,7 @@ These instructions will get you to build Python and packages manager in your doc
 ### Usage
 ```
 docker pull bananabb/python:latest
-docker run -itd --name python -p 8080:80 bananabb/python
+docker run -itd --name python -v {your directory}:/var/www/html -p 8080:80 bananabb/python
 docker exec -it python /bin/bash
 python3 -V
 ```

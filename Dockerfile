@@ -10,5 +10,7 @@ RUN apt-get update -y \
 	libffi-dev \
 	python3-dev
 
+RUN mkdir -p /var/www/html
+WORKDIR /var/www/html
 EXPOSE 80 443
 CMD ["/bin/bash"]
