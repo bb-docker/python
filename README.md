@@ -8,6 +8,7 @@ These instructions will get you to build Python and packages manager in your doc
 1. Install [Docker](https://www.docker.com/).
 2. Download the sources from public [Docker Hub](https://hub.docker.com/r/bananabb/python/) or run Usage tag provided.
 3. Default working directory located in /var/www/html, you can setup specifically
+4. Use command `pip3 install {library}` to install you expected package or library
 
 ### Usage
 ```
