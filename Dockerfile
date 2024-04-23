@@ -1,14 +1,11 @@
-FROM bananabb/ubuntu:20.10
+FROM bananabb/ubuntu:24.04
 MAINTAINER BananaBb
 
-# Install Python:3.8.6 packages manager + common software
-RUN apt-get update -y \
- && apt-get install -y \
-	python3-pip \
-	build-essential \
-	libssl-dev \
-	libffi-dev \
-	python3-dev
+# Install Python:3.12.3 packages manager + common software
+RUN apt update -y \
+ && apt install -y \
+ 	python3-pip \
+	build-essential
 
 RUN mkdir -p /var/www/html
 WORKDIR /var/www/html
